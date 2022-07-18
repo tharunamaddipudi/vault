@@ -1,0 +1,7 @@
+local   replication     all                                     trust
+host    replication     all             127.0.0.1/32            trust
+host    replication     all             ::1/128                 trust
+host  all  postgres  172.0.0.0/8  md5
+host  all  postgres_exporter  172.0.0.0/8  trust
+local   all     rcp_user                    peer map=read_only
+local  all  postgres    md5
