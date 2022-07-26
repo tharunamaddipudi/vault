@@ -1,0 +1,1 @@
+/usr/lib/postgresql/12/bin/postgres "-c" "max_connections=250" "-c" "log_disconnections=on" "-c" "unix_socket_permissions=0770" "-c" "ssl=off" "-c" "ssl_cert_file=rcp_server.crt" "-c" "ssl_key_file=rcp_server.key"
